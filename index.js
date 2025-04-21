@@ -3,7 +3,10 @@ const { connectDb } = require('./Models/db');
 const AuthRouter=require('./Routes/AuthRouter');
 const PromptRouter = require("./Routes/PromptRouter")
 const app=express();
-const cors=require('cors');
+app.use(cors({
+    origin: 'http://localhost:5173', // your frontend URL
+    credentials: true, // if using cookies or auth headers
+  }));
 const bodyParser=require('body-parser');
 require('dotenv').config();
 const PORT=process.env.PORT || 3000;
