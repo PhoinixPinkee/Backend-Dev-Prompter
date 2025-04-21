@@ -2,7 +2,6 @@ const express=require('express');
 const { connectDb } = require('./Models/db');
 const AuthRouter=require('./Routes/AuthRouter');
 const PromptRouter = require("./Routes/PromptRouter")
-
 const app=express();
 const cors=require('cors');
 const bodyParser=require('body-parser');
