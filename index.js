@@ -2,6 +2,7 @@ const express=require('express');
 const { connectDb } = require('./Models/db');
 const AuthRouter=require('./Routes/AuthRouter');
 const PromptRouter = require("./Routes/PromptRouter")
+const cors=require('cors');
 const app=express();
 app.use(cors({
     origin: 'http://localhost:5173', // your frontend URL
