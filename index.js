@@ -5,7 +5,7 @@ const PromptRouter = require("./Routes/PromptRouter")
 const cors=require('cors');
 const app=express();
 app.use(cors({
-    origin: 'http://localhost:5173', // your frontend URL
+    origin: 'https://unique-narwhal-8d75a2.netlify.app/', // your frontend URL
     credentials: true, // if using cookies or auth headers
   }));
 const bodyParser=require('body-parser');
